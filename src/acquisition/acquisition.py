@@ -1,13 +1,3 @@
-"""
-Data acquisition module (Owner: Tiago).
-
-Thin wrapper around the YouTube Data API v3 (`googleapiclient.discovery`) used
-to pull video metadata and comment threads for the channels defined in
-``config.py``. Raw API payloads are persisted to ``data/raw/`` so that the
-rest of the pipeline can run offline; the public entry point
-``build_dataset()`` returns a tidy merged DataFrame and writes it to
-``data/processed/master_dataset.csv``.
-"""
 
 from __future__ import annotations
 
